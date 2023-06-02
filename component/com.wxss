@@ -1,0 +1,6 @@
+/* component/com.wxss */
+.my {
+  background-color: rgb(219, 191, 191);
+  line-height: 60rpx;
+  text-align: center;
+}

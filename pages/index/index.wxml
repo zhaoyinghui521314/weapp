@@ -1,0 +1,21 @@
+<!--pages/index/index.wxml-->
+<swiper indicator-dots circular>
+  <swiper-item wx:for="{{swiperData}}" wx:key="id">
+    <image src="{{item.image}}"></image>
+  </swiper-item>
+</swiper>
+
+<view class="container">
+  <navigator url="/pages/list/list?id={{item.id}}&&name={{item.name}}" class="item" wx:for="{{gridData}}" wx:key="id">
+    <image src="{{item.icon}}"></image>
+    <text>{{item.name}}</text>
+  </navigator>
+</view>
+<view class="btn">
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+</view>
+<com></com>
+<view class='footer'></view>

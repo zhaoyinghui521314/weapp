@@ -1,0 +1,2 @@
+<!--component/com.wxml-->
+<view class="my">我是自定义组件</view>

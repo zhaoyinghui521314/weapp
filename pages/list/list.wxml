@@ -1,0 +1,16 @@
+<!--pages/list/list.wxml-->
+<view class="all">
+<view class="container" wx:for="{{list}}" wx:key="id">
+  <view class="img"> 
+    <image src="{{item.images[0]}}"></image>
+  </view>
+  
+  <view class="text">
+    <text class="name">{{item.name}}</text>
+    <text>电话：{{item.phone}}</text>
+    <text>地址：{{item.address}}</text>
+    <text>时间：{{item.businessHours}}</text>
+  </view>
+</view>
+
+</view>

@@ -6,6 +6,9 @@ Component({
   /**
    * 组件的初始数据
    */
+  properties: {
+    data: Number
+  },
   behaviors: [storeBindingsBehavior],
   storeBindings: {
     store,

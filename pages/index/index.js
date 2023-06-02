@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    da: 1,
     swiperData: [],
     gridData: [],
   },
@@ -34,11 +35,20 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  synCount(data) {
+    console.log('count', data);
+    data.detail.func();
+  },
   onLoad(options) {
     this.getSwiperData();   
     this.getGridData(); 
   },
-
+  handleClick() {
+    // 父组件获取子组件实例，获取数据或调用子组件方法
+    const child = this.selectComponent('.com2');
+    child.setData({a: child.data.a + 1});
+    console.log('child', child);
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

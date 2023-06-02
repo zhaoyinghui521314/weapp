@@ -1,2 +1,2 @@
 <!--component/com.wxml-->
-<view class="my">我是自定义组件</view>
+<view bind:tap="handleClick" class="my">{{a}}我是自定义组件{{dat}}</view>
